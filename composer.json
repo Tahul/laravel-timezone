@@ -21,7 +21,7 @@
     "require": {
         "php": ">=8.0",
         "laravel/framework": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
-        "torann/geoip": "dev-master",
+        "laravel-geoip": "dev-master",
         "nesbot/carbon": "^1.0 || ^2.0"
     },
     "autoload": {

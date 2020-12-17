@@ -23,7 +23,7 @@ class LaravelTimezoneServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         // Allow migrations publish
         if (! class_exists('AddTimezoneColumnToUsersTable')) {
@@ -67,7 +67,7 @@ class LaravelTimezoneServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         $this->app->bind('timezone', Timezone::class);
 

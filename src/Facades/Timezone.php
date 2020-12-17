@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Facade;
 
 class Timezone extends Facade
 {
-    public static function getFacadeAccessor()
+    public static function getFacadeAccessor(): string
     {
         return 'timezone';
     }

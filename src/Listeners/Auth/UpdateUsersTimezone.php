@@ -15,7 +15,7 @@ class UpdateUsersTimezone
      *
      * @return void
      */
-    public function handle($event)
+    public function handle($event): void
     {
         $user = null;
 
@@ -63,7 +63,7 @@ class UpdateUsersTimezone
     /**
      * @param  Location  $geoip_info
      */
-    private function notify(Location $geoip_info)
+    private function notify(Location $geoip_info): Location
     {
         if (config('timezone.flash') == 'off') {
             return;
@@ -129,7 +129,7 @@ class UpdateUsersTimezone
      * @param $keys
      * @return string|null
      */
-    private function lookup($type, $keys)
+    private function lookup($type, $keys): ?string
     {
         $value = null;
 

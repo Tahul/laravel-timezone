@@ -63,7 +63,7 @@ class UpdateUsersTimezone
     /**
      * @param  Location  $geoip_info
      */
-    private function notify(Location $geoip_info): Location
+    private function notify(Location $geoip_info)
     {
         if (config('timezone.flash') == 'off') {
             return;

@@ -14,7 +14,6 @@
     ],
     "repositories": [
         {
-            "name": "torann/geoip",
             "url": "https://github.com/thadbryson/laravel-geoip",
             "type": "git"
         }
